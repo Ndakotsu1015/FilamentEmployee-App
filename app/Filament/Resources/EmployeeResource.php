@@ -87,6 +87,7 @@ class EmployeeResource extends Resource
                     DatePicker::make('birth_date')->required(),
                     DatePicker::make('date_hired')->required(),
                 ])
+                
             ]);
     }
 
@@ -134,5 +135,5 @@ class EmployeeResource extends Resource
             'create' => Pages\CreateEmployee::route('/create'),
             'edit' => Pages\EditEmployee::route('/{record}/edit'),
         ];
-    }    
+    }
 }
